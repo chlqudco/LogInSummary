@@ -7,12 +7,162 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/topTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="로그인 방식 선택"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/firstGuideLineView"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topTextView" />
+
+    <TextView
+        android:id="@+id/useFirebaseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Use Firebase"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstGuideLineView" />
+
+    <!-- 이메일 로그인 -->
+    <Button
+        android:id="@+id/emailLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="email"
+        app:layout_constraintEnd_toStartOf="@id/googleLogInButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/useFirebaseTextView" />
+
+    <!-- 구글 로그인 -->
+    <Button
+        android:id="@+id/googleLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        app:layout_constraintEnd_toStartOf="@id/appleLogInButton"
+        app:layout_constraintStart_toEndOf="@id/emailLogInButton"
+        app:layout_constraintTop_toTopOf="@id/emailLogInButton" />
+
+    <!-- 애플 로그인 -->
+    <Button
+        android:id="@+id/appleLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/googleLogInButton"
+        app:layout_constraintTop_toTopOf="@id/googleLogInButton" />
+
+    <!-- 익명 로그인 -->
+    <Button
+        android:id="@+id/guestLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Guest"
+        app:layout_constraintEnd_toStartOf="@id/phoneLogInButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLogInButton" />
+
+    <!-- 전화번호 로그인 -->
+    <Button
+        android:id="@+id/phoneLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호"
+        app:layout_constraintEnd_toStartOf="@id/gitHubLogInButton"
+        app:layout_constraintStart_toEndOf="@id/guestLogInButton"
+        app:layout_constraintTop_toTopOf="@id/guestLogInButton" />
+
+    <!-- 전화번호 로그인 -->
+    <Button
+        android:id="@+id/gitHubLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GitHub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/phoneLogInButton"
+        app:layout_constraintTop_toTopOf="@id/guestLogInButton" />
+
+    <!-- Facebook 로그인 -->
+    <Button
+        android:id="@+id/faceBookLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Facebook"
+        app:layout_constraintEnd_toStartOf="@id/microsoftLogInButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guestLogInButton" />
+
+    <!-- Microsoft 로그인 -->
+    <Button
+        android:id="@+id/microsoftLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Microsoft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/faceBookLogInButton"
+        app:layout_constraintTop_toTopOf="@id/faceBookLogInButton" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/noFirebaseTextView"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/noFirebaseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="No Firebase"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faceBookLogInButton" />
+
+    <!-- Kakao 로그인 -->
+    <Button
+        android:id="@+id/kakaoLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Kakao"
+        app:layout_constraintEnd_toStartOf="@id/naverLogInButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noFirebaseTextView" />
+
+    <!-- Naver 로그인 -->
+    <Button
+        android:id="@+id/naverLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/kakaoLogInButton"
+        app:layout_constraintTop_toTopOf="@id/kakaoLogInButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
