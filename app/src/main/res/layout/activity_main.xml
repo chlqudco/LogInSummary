@@ -46,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:onClick="buttonClicked"
         android:text="email"
         app:layout_constraintEnd_toStartOf="@id/googleLogInButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,6 +57,7 @@
         android:id="@+id/googleLogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClicked"
         android:text="Google"
         app:layout_constraintEnd_toStartOf="@id/appleLogInButton"
         app:layout_constraintStart_toEndOf="@id/emailLogInButton"
@@ -66,6 +68,7 @@
         android:id="@+id/appleLogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClicked"
         android:text="Apple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/googleLogInButton"
@@ -77,6 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:onClick="buttonClicked"
         android:text="Guest"
         app:layout_constraintEnd_toStartOf="@id/phoneLogInButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,16 +91,18 @@
         android:id="@+id/phoneLogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClicked"
         android:text="전화번호"
         app:layout_constraintEnd_toStartOf="@id/gitHubLogInButton"
         app:layout_constraintStart_toEndOf="@id/guestLogInButton"
         app:layout_constraintTop_toTopOf="@id/guestLogInButton" />
 
-    <!-- 전화번호 로그인 -->
+    <!-- 깃허브 로그인 -->
     <Button
         android:id="@+id/gitHubLogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClicked"
         android:text="GitHub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/phoneLogInButton"
@@ -108,6 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:onClick="buttonClicked"
         android:text="Facebook"
         app:layout_constraintEnd_toStartOf="@id/microsoftLogInButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,6 +125,7 @@
         android:id="@+id/microsoftLogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClicked"
         android:text="Microsoft"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/faceBookLogInButton"
@@ -126,11 +134,11 @@
     <View
         android:layout_width="0dp"
         android:layout_height="2dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
         android:background="@color/black"
         app:layout_constraintBottom_toTopOf="@id/noFirebaseTextView"
-        android:layout_marginBottom="20dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/noFirebaseTextView"
@@ -150,6 +158,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:onClick="buttonClicked"
         android:text="Kakao"
         app:layout_constraintEnd_toStartOf="@id/naverLogInButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -160,6 +169,7 @@
         android:id="@+id/naverLogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buttonClicked"
         android:text="Naver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/kakaoLogInButton"
