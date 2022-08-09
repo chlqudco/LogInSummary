@@ -6,4 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".GuestLogInActivity">
 
+    <TextView
+        android:id="@+id/GuestTopTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="익명 로그인"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/GuestLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/GuestLogOutButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="로그인"/>
+
+    <Button
+        android:id="@+id/GuestLogOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/GuestLogInButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="로그아웃"/>
+
+    <TextView
+        android:id="@+id/GuestResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GuestLogOutButton"
+        android:text="로그인 결과"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

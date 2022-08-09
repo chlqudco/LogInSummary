@@ -70,6 +70,7 @@
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="Apple"
+        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/googleLogInButton"
         app:layout_constraintTop_toTopOf="@id/googleLogInButton" />
@@ -93,6 +94,7 @@
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="전화번호"
+        android:enabled="false"
         app:layout_constraintEnd_toStartOf="@id/gitHubLogInButton"
         app:layout_constraintStart_toEndOf="@id/guestLogInButton"
         app:layout_constraintTop_toTopOf="@id/guestLogInButton" />
@@ -104,6 +106,7 @@
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="GitHub"
+        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/phoneLogInButton"
         app:layout_constraintTop_toTopOf="@id/guestLogInButton" />
@@ -116,6 +119,7 @@
         android:layout_marginTop="40dp"
         android:onClick="buttonClicked"
         android:text="Facebook"
+        android:enabled="false"
         app:layout_constraintEnd_toStartOf="@id/microsoftLogInButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guestLogInButton" />
@@ -127,6 +131,7 @@
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="Microsoft"
+        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/faceBookLogInButton"
         app:layout_constraintTop_toTopOf="@id/faceBookLogInButton" />
@@ -160,6 +165,7 @@
         android:layout_marginTop="40dp"
         android:onClick="buttonClicked"
         android:text="Kakao"
+        android:enabled="false"
         app:layout_constraintEnd_toStartOf="@id/naverLogInButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/noFirebaseTextView" />
@@ -171,6 +177,7 @@
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="Naver"
+        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/kakaoLogInButton"
         app:layout_constraintTop_toTopOf="@id/kakaoLogInButton" />
