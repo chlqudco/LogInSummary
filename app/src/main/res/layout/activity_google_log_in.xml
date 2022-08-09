@@ -6,4 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".GoogleLogInActivity">
 
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/profileGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="profileImageView,userNameTextView,logoutButton"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"/>
+
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profileImageView"
+        app:layout_constraintStart_toStartOf="@id/profileImageView"
+        app:layout_constraintEnd_toEndOf="@id/profileImageView"
+        android:textSize="16sp"
+        tools:text="최병채"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/userNameTextView"
+        app:layout_constraintTop_toTopOf="@id/userNameTextView"
+        android:layout_margin="8dp"
+        android:text="로그아웃"/>
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인 됨"
+        app:layout_constraintStart_toStartOf="@id/loginButton"
+        app:layout_constraintEnd_toEndOf="@id/loginButton"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        android:layout_marginTop="16dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
