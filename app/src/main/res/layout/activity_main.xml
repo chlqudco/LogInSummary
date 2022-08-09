@@ -94,7 +94,6 @@
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="전화번호"
-        android:enabled="false"
         app:layout_constraintEnd_toStartOf="@id/gitHubLogInButton"
         app:layout_constraintStart_toEndOf="@id/guestLogInButton"
         app:layout_constraintTop_toTopOf="@id/guestLogInButton" />
