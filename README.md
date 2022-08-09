@@ -12,6 +12,7 @@
   - 2022-08-08 : (Firebase) email 회원가입 로그인 구현 완료
   - 2022-08-09 : (Firebase) google 로그인 구현 완료
   - 2022-08-09 : (Firebase) 익명 로그인 구현 완료
+  - 2022-08-09 : (Firebase) 전화번호 로그인 구현 완료
 
 ---
 - 실행 화면
@@ -27,3 +28,9 @@
 - Firebase 익명 LogIn
 - ![KakaoTalk_20220809_154018181_01](https://user-images.githubusercontent.com/68932465/183581660-42922257-0936-410a-be1b-d4986352b12e.jpg)
 ![KakaoTalk_20220809_154018181](https://user-images.githubusercontent.com/68932465/183581665-720d5d3a-b302-44a2-95ed-0f908b1ef713.jpg)
+-
+- Firebase 전화번호 LogIn
+- ![KakaoTalk_20220809_160343606](https://user-images.githubusercontent.com/68932465/183585653-73d77ebf-d417-4ba5-bb08-2564f1385f0f.jpg)
+![KakaoTalk_20220809_160343606_01](https://user-images.githubusercontent.com/68932465/183585665-4005b8f0-4144-4245-95a7-904ffbbb69b2.jpg)
+![KakaoTalk_20220809_160343606_02](https://user-images.githubusercontent.com/68932465/183585669-9783ed11-08d2-4899-b3ab-10e86928c31d.jpg)
+![KakaoTalk_20220809_160343606_03](https://user-images.githubusercontent.com/68932465/183585670-174933fb-0124-4e71-bae1-cbdd87f78d7e.jpg)
