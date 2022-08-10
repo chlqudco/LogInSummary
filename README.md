@@ -17,6 +17,8 @@
   - 2022-08-10 : Kakao 로그인 구현 완료
   - 2022-08-10 : Naver 로그인 구현 완료
   - 2022-08-10 : (Firebase) FaceBook 로그인 구현 완료
+  - 2022-08-10 : (Firebase) Github 로그인 구현 완료
+  - 
 ---
 - 실행 화면
 
@@ -56,4 +58,9 @@
 ![KakaoTalk_20220810_160512502_02](https://user-images.githubusercontent.com/68932465/183837093-5061e0ca-3e53-49d7-9ac5-e821a7267e4d.jpg)
 ![KakaoTalk_20220810_160512502_03](https://user-images.githubusercontent.com/68932465/183837097-245e937b-f1b7-4465-9f24-216b67dc7225.jpg)
 ![KakaoTalk_20220810_160512502_04](https://user-images.githubusercontent.com/68932465/183837098-1703ff43-8ffc-46a8-8a31-192f9e3aa3c6.jpg)
+-
+- Github LogIn
+- ![KakaoTalk_20220810_203302524_01](https://user-images.githubusercontent.com/68932465/183891294-3bae4634-6d65-465b-934c-dd2e02bb15c6.jpg)
+![KakaoTalk_20220810_203302524_02](https://user-images.githubusercontent.com/68932465/183891302-fe88c2de-d79a-414f-8b5b-602822582caf.jpg)
+![KakaoTalk_20220810_203302524](https://user-images.githubusercontent.com/68932465/183891305-7c039d00-e6ba-4a1b-afbb-0dc428081f35.jpg)
 
