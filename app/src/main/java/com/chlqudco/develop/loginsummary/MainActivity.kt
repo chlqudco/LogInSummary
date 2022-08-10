@@ -3,8 +3,10 @@ package com.chlqudco.develop.loginsummary
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatDelegate
+import com.kakao.sdk.common.util.Utility
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         //다크모드 금지
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+        var keyHash = Utility.getKeyHash(this)
+        Log.e("asd",keyHash.toString())
     }
 
     fun buttonClicked(v: View) {

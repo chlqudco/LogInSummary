@@ -164,7 +164,6 @@
         android:layout_marginTop="40dp"
         android:onClick="buttonClicked"
         android:text="Kakao"
-        android:enabled="false"
         app:layout_constraintEnd_toStartOf="@id/naverLogInButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/noFirebaseTextView" />
