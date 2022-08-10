@@ -61,5 +61,8 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
 
     implementation "com.kakao.sdk:v2-all:2.11.0" // 전체 모듈 설치, 2.11.0 버전부터 지원
-    implementation "com.kakao.sdk:v2-user:2.11.0" // 카카오 로그인
+    implementation "com.kakao.sdk:v2-user:2.11.0" // 카카오 로그인 //네이버 로그인
+
+    implementation 'com.navercorp.nid:oauth-jdk8:5.1.0' // jdk 8
+
 }

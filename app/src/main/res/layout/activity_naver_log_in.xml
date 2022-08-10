@@ -6,4 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".NaverLogInActivity">
 
+    <TextView
+        android:id="@+id/NaverTopTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="네이버 로그인"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/NaverLogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/NaverLogOutButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="로그인"/>
+
+    <Button
+        android:id="@+id/NaverLogOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/NaverLogInButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="로그아웃"/>
+
+    <TextView
+        android:id="@+id/NaverResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NaverLogOutButton"
+        android:text="로그인 결과"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
