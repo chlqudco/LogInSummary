@@ -23,6 +23,8 @@ class NaverLogInActivity : AppCompatActivity() {
     private fun initViews() {
         NaverIdLoginSDK.initialize(this, "gCRYXhmVbGVAVWTBGPZu", "yrokdxv8Uh", "LogInSummary")
 
+        binding.NaverLogInButton.isEnabled = true
+        binding.NaverLogOutButton.isEnabled = false
         //로그아웃 하고 시작
         NaverIdLoginSDK.logout()
 
@@ -41,8 +43,17 @@ class NaverLogInActivity : AppCompatActivity() {
         var token: String? =""
 
         val profileCallback = object : NidProfileCallback<NidProfileResponse>{
-            override fun onSuccess(result: NidProfileResponse) { binding.NaverResultTextView.text = "로그인 성공" }
-            override fun onFailure(httpStatus: Int, message: String) { binding.NaverResultTextView.text = "로그인 실패" }
+            override fun onSuccess(result: NidProfileResponse) {
+                binding.NaverResultTextView.text = "로그인 성공"
+                binding.NaverLogInButton.isEnabled = false
+                binding.NaverLogOutButton.isEnabled = true
+            }
+            override fun onFailure(httpStatus: Int, message: String) {
+                binding.NaverResultTextView.text = "로그인 실패"
+
+                binding.NaverLogInButton.isEnabled = true
+                binding.NaverLogOutButton.isEnabled = false
+            }
             override fun onError(errorCode: Int, message: String) { binding.NaverResultTextView.text = "로그인 오류" }
         }
 
@@ -50,8 +61,14 @@ class NaverLogInActivity : AppCompatActivity() {
             override fun onSuccess() {
                 token = NaverIdLoginSDK.getAccessToken()
                 NidOAuthLogin().callProfileApi(profileCallback)
+                binding.NaverLogInButton.isEnabled = false
+                binding.NaverLogOutButton.isEnabled = true
             }
-            override fun onFailure(httpStatus: Int, message: String) { binding.NaverResultTextView.text = "로그인 실패" }
+            override fun onFailure(httpStatus: Int, message: String) {
+                binding.NaverResultTextView.text = "로그인 실패"
+                binding.NaverLogInButton.isEnabled = true
+                binding.NaverLogOutButton.isEnabled = false
+            }
             override fun onError(errorCode: Int, message: String) { binding.NaverResultTextView.text = "로그인 오류" }
         }
 
@@ -61,5 +78,7 @@ class NaverLogInActivity : AppCompatActivity() {
     private fun logOut() {
         NaverIdLoginSDK.logout()
         binding.NaverResultTextView.text = "로그인 안함"
+        binding.NaverLogInButton.isEnabled = true
+        binding.NaverLogOutButton.isEnabled = false
     }
 }

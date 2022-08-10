@@ -59,21 +59,11 @@
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="Google"
-        app:layout_constraintEnd_toStartOf="@id/appleLogInButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/emailLogInButton"
         app:layout_constraintTop_toTopOf="@id/emailLogInButton" />
 
     <!-- 애플 로그인 -->
-    <Button
-        android:id="@+id/appleLogInButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="buttonClicked"
-        android:text="Apple"
-        android:enabled="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/googleLogInButton"
-        app:layout_constraintTop_toTopOf="@id/googleLogInButton" />
 
     <!-- 익명 로그인 -->
     <Button
@@ -105,7 +95,6 @@
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="GitHub"
-        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/phoneLogInButton"
         app:layout_constraintTop_toTopOf="@id/guestLogInButton" />
@@ -118,21 +107,11 @@
         android:layout_marginTop="40dp"
         android:onClick="buttonClicked"
         android:text="Facebook"
-        app:layout_constraintEnd_toStartOf="@id/microsoftLogInButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guestLogInButton" />
 
     <!-- Microsoft 로그인 -->
-    <Button
-        android:id="@+id/microsoftLogInButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="buttonClicked"
-        android:text="Microsoft"
-        android:enabled="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/faceBookLogInButton"
-        app:layout_constraintTop_toTopOf="@id/faceBookLogInButton" />
 
     <View
         android:layout_width="0dp"
