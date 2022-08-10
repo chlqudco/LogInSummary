@@ -118,7 +118,6 @@
         android:layout_marginTop="40dp"
         android:onClick="buttonClicked"
         android:text="Facebook"
-        android:enabled="false"
         app:layout_constraintEnd_toStartOf="@id/microsoftLogInButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guestLogInButton" />

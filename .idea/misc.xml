@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/home/.gradle/caches/transforms-3/0dd61862ee87af3c7aeda75324bc80ab/transformed/facebook-share-4.42.0/res/drawable/com_facebook_button_send_background.xml" value="0.1175" />
         <entry key="..\:/Users/home/AndroidStudioProjects/LogInSummary/app/src/main/res/layout/activity_email_log_in.xml" value="0.18" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/LogInSummary/app/src/main/res/layout/activity_face_book_log_in.xml" value="0.26132246376811596" />
         <entry key="..\:/Users/home/AndroidStudioProjects/LogInSummary/app/src/main/res/layout/activity_git_hub_log_in.xml" value="0.2586050724637681" />
         <entry key="..\:/Users/home/AndroidStudioProjects/LogInSummary/app/src/main/res/layout/activity_google_log_in.xml" value="0.3046875" />
         <entry key="..\:/Users/home/AndroidStudioProjects/LogInSummary/app/src/main/res/layout/activity_guest_log_in.xml" value="0.2703125" />
